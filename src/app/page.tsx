@@ -1,66 +1,48 @@
-import type { Metadata } from "next";
-import { Inter, DM_Serif_Display } from "next/font/google";
-import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import Link from "next/link";
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const dmSerifDisplay = DM_Serif_Display({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-display",
-  display: "swap",
-});
-
-export const metadata: Metadata = {
-  title: {
-    default: "Strova İnşaat | Konut Geliştirme, Kentsel Dönüşüm & Yatırım",
-    template: "%s | Strova İnşaat",
-  },
-  description:
-    "Strova İnşaat olarak, modern mimariyi kaliteli işçilik ve güvenilir yapı anlayışıyla buluşturuyoruz. Konforlu, estetik ve sürdürülebilir yaşam alanları tasarlayarak, yalnızca bugünün değil geleceğin ihtiyaçlarına da cevap veren projeler geliştiriyoruz. Her projemizde müşteri memnuniyetini ön planda tutuyor; şeffaf, güvenilir ve yenilikçi yaklaşımımızla yaşam kalitesini artıran yapılar inşa ediyoruz. Kalıcı değer üretme vizyonumuzla, güvenle yaşayabileceğiniz ve yatırım değeri yüksek projelere imza atmaya devam ediyoruz.",
-  keywords: [
-    "inşaat", 
-    "kentsel dönüşüm",
-    "yapı",
-    "bina",
-    "yapım",
-    "yıkım",
-    "konut geliştirme", 
-    "konut projesi", 
-    "yatırım danışmanlığı", 
-    "strova", 
-    "strova inşaat"
-  ],
-  openGraph: {
-    title: "Strova İnşaat",
-    description: 
-      "Strova İnşaat olarak, modern mimariyi kaliteli işçilik ve güvenilir yapı anlayışıyla buluşturuyoruz. Konforlu, estetik ve sürdürülebilir yaşam alanları tasarlayarak yaşam kalitesini artıran yapılar inşa ediyoruz.",
-    locale: "tr_TR",
-    type: "website",
-  },
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function HomePage() {
   return (
-    <html
-      lang="tr"
-      className={`${inter.variable} ${dmSerifDisplay.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col bg-black text-[#f0f0f0]">
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
-      </body>
-    </html>
+    <main className="bg-black min-h-screen flex flex-col justify-center pt-[59px]">
+      {/* Hero Section */}
+      <section className="relative w-full max-w-[1200px] mx-auto px-6 py-[120px] md:py-[180px] flex flex-col justify-center">
+        {/* Küçük Üst Başlık / Rozet */}
+        <div className="inline-flex items-center gap-2 border border-[#292d30] rounded-[10px] px-3 py-1.5 mb-8 w-fit">
+          <span className="text-[#a1a4a5] text-[12px] tracking-[0.1em] font-mono uppercase">
+            Kentsel Dönüşüm & Konut Geliştirme
+          </span>
+        </div>
+
+        {/* Ana Slogan */}
+        <h1 
+          className="text-[44px] sm:text-[60px] md:text-[80px] lg:text-[96px] font-[400] leading-[1.05] tracking-[-0.04em] text-white max-w-[900px] mb-8"
+          style={{ fontFamily: "var(--font-display)" }}
+        >
+          Geleceğin güvenli
+          <br />
+          <span className="text-[#a1a4a5]">yapılarını inşa ediyoruz.</span>
+        </h1>
+
+        {/* Kısa Tanıtım Metni */}
+        <p className="text-[#a1a4a5] text-[16px] sm:text-[18px] md:text-[20px] leading-[1.6] max-w-[600px] mb-12 font-light">
+          Strova İnşaat olarak, modern mimariyi kaliteli işçilik ve güvenilir kentsel dönüşüm anlayışıyla buluşturuyoruz. Yaşam kalitesini artıran ve değer üreten projeler geliştiriyoruz.
+        </p>
+
+        {/* Aksiyon Butonları */}
+        <div className="flex flex-wrap gap-4">
+          <Link
+            href="/projeler"
+            className="text-[14px] font-medium text-black bg-white hover:bg-[#f0f0f0] rounded-[6px] px-8 py-3.5 transition-colors duration-150"
+          >
+            Projelerimizi İnceleyin
+          </Link>
+          <Link
+            href="/hizmetler"
+            className="text-[14px] font-medium text-white border border-[#292d30] hover:border-[#464a4d] rounded-[6px] px-8 py-3.5 transition-colors duration-150"
+          >
+            Hizmetlerimiz
+          </Link>
+        </div>
+      </section>
+    </main>
   );
 }
