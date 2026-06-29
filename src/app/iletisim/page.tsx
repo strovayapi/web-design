@@ -1,15 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "İletişim & Hakkımızda",
-  description: "Strova İnşaat ile iletişime geçin. Ücretsiz keşif ve danışmanlık için bize ulaşın.",
+  title: "İletişim - Strova İnşaat",
+  description: "Strova İnşaat ile iletişime geçin. Konut projelerimiz ve yatırım danışmanlığı hizmetlerimiz hakkında bilgi almak için bize ulaşın.",
 };
-
-const teamMembers = [
-  { name: "Ahmet Yılmaz", role: "Genel Müdür", experience: "25 yıl deneyim" },
-  { name: "Mehmet Kaya", role: "Baş Mühendis", experience: "18 yıl deneyim" },
-  { name: "Ayşe Demir", role: "Proje Koordinatörü", experience: "12 yıl deneyim" },
-];
 
 export default function IletisimPage() {
   return (
@@ -18,7 +12,7 @@ export default function IletisimPage() {
       <section className="py-[80px] md:py-[120px] bg-black border-b border-[#292d30]">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="inline-flex items-center gap-2 border border-[#292d30] rounded-[10px] px-3 py-1.5 mb-8">
-            <span className="text-[#a1a4a5] text-[13px] tracking-[0.05em]">İLETİŞİM & HAKKIMIZDA</span>
+            <span className="text-[#a1a4a5] text-[13px] tracking-[0.05em]">İLETİŞİM</span>
           </div>
           <h1
             className="text-[48px] md:text-[72px] font-[400] leading-[1] tracking-[-0.05em] text-white mb-6"
@@ -34,11 +28,12 @@ export default function IletisimPage() {
         </div>
       </section>
 
-      {/* Contact + About grid */}
+      {/* Contact Grid */}
       <section className="py-[80px] bg-black">
         <div className="max-w-[1200px] mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            {/* Contact form */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            
+            {/* Sol Taraf: İletişim Formu */}
             <div>
               <h2 className="text-white font-semibold text-[20px] mb-8">Mesaj Gönderin</h2>
               <form className="flex flex-col gap-4">
@@ -80,18 +75,16 @@ export default function IletisimPage() {
                   <label className="block text-[#a1a4a5] text-[13px] mb-2">Hizmet Türü</label>
                   <select className="w-full bg-[#0b0e14] border border-[#292d30] rounded-[6px] px-4 py-2.5 text-[14px] text-[#f0f0f0] focus:outline-none focus:border-[#3b9eff] transition-colors">
                     <option value="">Seçiniz</option>
-                    <option>Konut Projesi</option>
-                    <option>Ticari Yapı</option>
-                    <option>Tadilat & Restorasyon</option>
-                    <option>Altyapı</option>
-                    <option>Danışmanlık</option>
+                    <option>Konut Geliştirme & Satış</option>
+                    <option>Yatırım Danışmanlığı</option>
+                    <option>Diğer</option>
                   </select>
                 </div>
                 <div>
                   <label className="block text-[#a1a4a5] text-[13px] mb-2">Mesajınız</label>
                   <textarea
                     rows={4}
-                    placeholder="Projeniz hakkında kısaca bilgi verin..."
+                    placeholder="Mesajınızı buraya yazın..."
                     className="w-full bg-[#0b0e14] border border-[#292d30] rounded-[6px] px-4 py-2.5 text-[14px] text-[#f0f0f0] placeholder-[#6c6c6c] focus:outline-none focus:border-[#3b9eff] transition-colors resize-none"
                   />
                 </div>
@@ -104,70 +97,49 @@ export default function IletisimPage() {
               </form>
             </div>
 
-            {/* Contact info + about */}
-            <div className="flex flex-col gap-8">
-              {/* Contact info */}
-              <div>
-                <h2 className="text-white font-semibold text-[20px] mb-6">İletişim Bilgileri</h2>
-                <div className="flex flex-col gap-4">
-                  {[
-                    { label: "Telefon", value: "+90 (XXX) XXX XX XX", href: "tel:+90XXXXXXXXXX" },
-                    { label: "E-posta", value: "info@strovainsaat.com", href: "mailto:info@strovainsaat.com" },
-                    { label: "Adres", value: "İstanbul, Türkiye", href: "#" },
-                  ].map((item) => (
-                    <div key={item.label} className="border border-[#292d30] rounded-[12px] p-4 bg-[#0b0e14]">
-                      <div className="text-[#6c6c6c] text-[12px] mb-1">{item.label}</div>
-                      <a
-                        href={item.href}
-                        className="text-[#f0f0f0] text-[15px] hover:text-white transition-colors"
-                      >
-                        {item.value}
-                      </a>
-                    </div>
-                  ))}
+            {/* Sağ Taraf: Sadece İletişim Bilgileri */}
+            <div>
+              <h2 className="text-white font-semibold text-[20px] mb-8">İletişim Bilgileri</h2>
+              <div className="flex flex-col gap-4">
+                
+                {/* Telefon */}
+                <div className="border border-[#292d30] rounded-[12px] p-5 bg-[#0b0e14]">
+                  <div className="text-[#6c6c6c] text-[12px] mb-1.5 uppercase tracking-wider font-medium">Telefon</div>
+                  <a
+                    href="tel:+90XXXXXXXXXX"
+                    className="text-[#f0f0f0] text-[16px] hover:text-[#3b9eff] transition-colors font-mono"
+                  >
+                    +90 (XXX) XXX XX XX
+                  </a>
                 </div>
-              </div>
 
-              {/* About */}
-              <div>
-                <h2 className="text-white font-semibold text-[20px] mb-4">Hakkımızda</h2>
-                <p className="text-[#a1a4a5] text-[15px] leading-[1.7] mb-6">
-                  Strova İnşaat, 2004 yılında kurulmuş olup Türkiye&apos;nin önde gelen inşaat şirketleri arasında yer almaktadır. 20 yılı aşkın deneyimimizle konut, ticari ve altyapı projelerinde kaliteli çözümler sunmaktayız.
-                </p>
-                <div className="grid grid-cols-3 gap-4">
-                  {[
-                    { value: "20+", label: "Yıl" },
-                    { value: "150+", label: "Proje" },
-                    { value: "50+", label: "Uzman" },
-                  ].map((stat) => (
-                    <div key={stat.label} className="border border-[#292d30] rounded-[12px] p-4 bg-[#0b0e14] text-center">
-                      <div className="text-white text-[24px] font-semibold mb-1">{stat.value}</div>
-                      <div className="text-[#a1a4a5] text-[12px]">{stat.label}</div>
-                    </div>
-                  ))}
+                {/* E-posta */}
+                <div className="border border-[#292d30] rounded-[12px] p-5 bg-[#0b0e14]">
+                  <div className="text-[#6c6c6c] text-[12px] mb-1.5 uppercase tracking-wider font-medium">E-posta</div>
+                  <a
+                    href="mailto:info@strovainsaat.com"
+                    className="text-[#f0f0f0] text-[16px] hover:text-[#3b9eff] transition-colors"
+                  >
+                    info@strovainsaat.com
+                  </a>
                 </div>
-              </div>
 
-              {/* Team */}
-              <div>
-                <h2 className="text-white font-semibold text-[20px] mb-4">Ekibimiz</h2>
-                <div className="flex flex-col gap-3">
-                  {teamMembers.map((member) => (
-                    <div key={member.name} className="flex items-center gap-4 border border-[#292d30] rounded-[12px] p-4 bg-[#0b0e14]">
-                      <div className="w-10 h-10 rounded-full bg-[#292d30] flex items-center justify-center shrink-0">
-                        <span className="text-[#a1a4a5] text-[14px] font-medium">
-                          {member.name[0]}
-                        </span>
-                      </div>
-                      <div>
-                        <div className="text-white text-[14px] font-medium">{member.name}</div>
-                        <div className="text-[#a1a4a5] text-[12px]">{member.role} · {member.experience}</div>
-                      </div>
-                    </div>
-                  ))}
+                {/* Adres */}
+                <div className="border border-[#292d30] rounded-[12px] p-5 bg-[#0b0e14]">
+                  <div className="text-[#6c6c6c] text-[12px] mb-1.5 uppercase tracking-wider font-medium">Adres</div>
+                  <a
+                    href="https://maps.app.goo.gl/16CSBFhN2VJwRCwJ7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#f0f0f0] text-[15px] hover:text-[#3b9eff] transition-colors block leading-relaxed"
+                  >
+                    Bağlar Mahallesi, 48. Sokak No: 48, Güneşli, Bağcılar/İstanbul 34212
+                  </a>
                 </div>
+
               </div>
             </div>
+
           </div>
         </div>
       </section>
