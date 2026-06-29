@@ -65,7 +65,7 @@ export default function RootLayout({
     >
       <head>
         {/* İkon kodunu buraya ekleyin */}
-        <link rel="icon" href="/favicon.ico" type="image/x-ico" />
+        <link rel="icon" href="/favicon-new.ico" type="image/x-ico" />
       </head>
       <body className="min-h-full flex flex-col bg-black text-[#f0f0f0]">
         <Navbar />
