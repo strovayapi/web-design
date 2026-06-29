@@ -53,7 +53,6 @@ export const metadata: Metadata = {
     ],
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -64,6 +63,10 @@ export default function RootLayout({
       lang="tr"
       className={`${inter.variable} ${dmSerifDisplay.variable} h-full antialiased`}
     >
+      <head>
+        {/* İkon kodunu buraya ekleyin */}
+        <link rel="icon" href="/opengraph-image.jpeg" type="image/jpeg" />
+      </head>
       <body className="min-h-full flex flex-col bg-black text-[#f0f0f0]">
         <Navbar />
         <main className="flex-1">{children}</main>
