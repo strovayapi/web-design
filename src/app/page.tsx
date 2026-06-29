@@ -1,4 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+// Sayfa açıkken tarayıcı sekmesinde "Strova İnşaat" yazmasını sağlayan SEO ayarı
+export const metadata: Metadata = {
+  title: "Strova İnşaat",
+  title: {
+    absolute: "Strova İnşaat", // Diğer şablonları ezip sadece bu ismin görünmesini sağlar
+  },
+};
 
 export default function HomePage() {
   return (
@@ -8,7 +17,7 @@ export default function HomePage() {
         {/* Küçük Üst Başlık / Rozet */}
         <div className="inline-flex items-center gap-2 border border-[#292d30] rounded-[10px] px-3 py-1.5 mb-8 w-fit">
           <span className="text-[#a1a4a5] text-[12px] tracking-[0.1em] font-mono uppercase">
-            Strova İnşaat
+            Kentsel Dönüşüm & Konut Geliştirme
           </span>
         </div>
 
