@@ -2,10 +2,11 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#292d30] mt-auto">
+    <footer className="border-t border-[#292d30] mt-auto bg-black">
       <div className="max-w-[1200px] mx-auto px-6 py-12">
         <div className="flex flex-col md:flex-row justify-between gap-8">
-          {/* Brand */}
+          
+          {/* Logo ve Marka Bilgisi */}
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-2">
               <span className="text-white font-semibold text-[16px] tracking-[0.15em] uppercase">
@@ -20,8 +21,10 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Links */}
+          {/* Menü Linkleri */}
           <div className="flex gap-12">
+            
+            {/* Kurumsal Menü */}
             <div className="flex flex-col gap-3">
               <span className="text-[#f0f0f0] text-[12px] font-semibold tracking-[0.05em] uppercase">
                 Kurumsal
@@ -39,12 +42,14 @@ export default function Footer() {
                 Projeler
               </Link>
               <Link
-                href="/hakkinda"
+                href="/hakkimizda"
                 className="text-[#a1a4a5] text-[14px] hover:text-[#f0f0f0] transition-colors"
               >
                 Hakkımızda
               </Link>
             </div>
+
+            {/* İletişim Menü */}
             <div className="flex flex-col gap-3">
               <span className="text-[#f0f0f0] text-[12px] font-semibold tracking-[0.05em] uppercase">
                 İletişim
@@ -56,22 +61,25 @@ export default function Footer() {
                 Telefon
               </a>
               <a
-                href="mailto:strovainsaat@gmail..com"
+                href="mailto:strovainsaat@gmail.com"
                 className="text-[#a1a4a5] text-[14px] hover:text-[#f0f0f0] transition-colors"
               >
                 E-posta
               </a>
-              <Link
+              <a
                 href="https://maps.app.goo.gl/16CSBFhN2VJwRCwJ7"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#a1a4a5] text-[14px] hover:text-[#f0f0f0] transition-colors"
-                
-                >
+              >
                 Adres
-              </Link>
+              </a>
             </div>
+
           </div>
         </div>
 
+        {/* Telif Hakları Alt Barı */}
         <div className="mt-10 pt-6 border-t border-[#292d30] flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-[#6c6c6c] text-[12px]">
             © {new Date().getFullYear()} Strova İnşaat. Tüm hakları saklıdır.
