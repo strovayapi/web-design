@@ -39,10 +39,7 @@ export default function Footer() {
                 Projeler
               </Link>
               <Link
-                href="Strova İnşaat, 2026 yılında kurulmuş olup konut geliştirme ve satış alanında faaliyet göstermektedir. Kurulduğu günden bu yana kalite, güven ve sürdürülebilirlik ilkelerini esas alarak sektörde güçlü ve kurumsal bir yapı oluşturmayı hedeflemektedir.
-Yenilikçi bakış açımız ve çağdaş mühendislik anlayışımızla, her projeye özgü çözümler geliştiriyor; estetik, fonksiyonellik ve konforu bir araya getiriyoruz. Müşteri memnuniyetini önceliğimiz olarak kabul ediyor, beklentilerin ötesine geçen yaşam alanları inşa etmeyi amaçlıyoruz.
-Strova İnşaat olarak, güvenilir, şeffaf ve uzun vadeli değer üreten projelerle sektörde kalıcı bir iz bırakmayı hedefliyoruz.
-"
+                href="/hakkinda"
                 className="text-[#a1a4a5] text-[14px] hover:text-[#f0f0f0] transition-colors"
               >
                 Hakkımızda
