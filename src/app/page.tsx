@@ -8,7 +8,7 @@ export default function HomePage() {
         {/* Küçük Üst Başlık / Rozet */}
         <div className="inline-flex items-center gap-2 border border-[#292d30] rounded-[10px] px-3 py-1.5 mb-8 w-fit">
           <span className="text-[#a1a4a5] text-[12px] tracking-[0.1em] font-mono uppercase">
-            Kentsel Dönüşüm & Konut Geliştirme
+            Strova İnşaat
           </span>
         </div>
 
