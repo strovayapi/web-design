@@ -1,9 +1,16 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Hakkımızda",
+  description: "Strova İnşaat kurumsal değerleri, modern mimari anlayışı ve sürdürülebilir konut geliştirme vizyonu hakkında bilgi edinin.",
+};
 
 export default function HakkimizdaPage() {
   return (
     <main className="min-h-screen bg-black text-[#f0f0f0] pt-[100px] pb-16">
       <div className="max-w-[800px] mx-auto px-6">
+        
         {/* Sayfa Başlığı */}
         <div className="border-b border-[#292d30] pb-6 mb-10">
           <h1 className="text-[32px] font-bold tracking-tight text-white uppercase">
@@ -47,6 +54,7 @@ export default function HakkimizdaPage() {
             Bize Ulaşın
           </Link>
         </div>
+
       </div>
     </main>
   );
