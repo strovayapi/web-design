@@ -65,12 +65,13 @@ Strova İnşaat olarak, güvenilir, şeffaf ve uzun vadeli değer üreten projel
                 E-posta
               </a>
               <Link
-                href="Bağlar Mahallesi
-48. Sokak No: 48
-Güneşli, Bağcılar/İstanbul
-34212."
+                href="https://maps.app.goo.gl/16CSBFhN2VJwRCwJ7"
                 className="text-[#a1a4a5] text-[14px] hover:text-[#f0f0f0] transition-colors"
-              >
+                >
+  Bağlar Mahallesi
+  48. Sokak No: 48
+  Güneşli, Bağcılar/İstanbul
+  34212.              >
                 Adres
               </Link>
             </div>
