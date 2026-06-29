@@ -19,15 +19,27 @@ const dmSerifDisplay = DM_Serif_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Strova İnşaat | Güvenilir İnşaat Çözümleri",
+    default: "Strova İnşaat | Konut Geliştirme, Kentsel Dönüşüm & Yatırım",
     template: "%s | Strova İnşaat",
   },
   description:
-    "Strova İnşaat olarak konut, ticari ve altyapı projelerinde kaliteli ve güvenilir çözümler sunuyoruz.",
-  keywords: ["inşaat", "yapı", "konut", "ticari", "proje", "strova"],
+    "Strova İnşaat; modern konut geliştirme, güvenilir kentsel dönüşüm, bina yapım ve gayrimenkul yatırım danışmanlığı alanlarında kurumsal çözümler sunar.",
+  keywords: [
+    "inşaat", 
+    "kentsel dönüşüm",
+    "yapı",
+    "bina",
+    "yapım",
+    "yıkım",
+    "konut geliştirme", 
+    "konut projesi", 
+    "yatırım danışmanlığı", 
+    "strova", 
+    "strova inşaat"
+  ],
   openGraph: {
     title: "Strova İnşaat",
-    description: "Güvenilir İnşaat Çözümleri",
+    description: "Konut Geliştirme, Kentsel Dönüşüm & Yapı Çözümleri",
     locale: "tr_TR",
     type: "website",
   },
