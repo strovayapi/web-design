@@ -67,7 +67,7 @@ export default function IletisimPage() {
                   <label className="block text-[#a1a4a5] text-[13px] mb-2">Telefon</label>
                   <input
                     type="tel"
-                    placeholder="+90 5XX XXX XX XX"
+                    placeholder="+90 534 630 00 59"
                     className="w-full bg-[#0b0e14] border border-[#292d30] rounded-[6px] px-4 py-2.5 text-[14px] text-[#f0f0f0] placeholder-[#6c6c6c] focus:outline-none focus:border-[#3b9eff] transition-colors"
                   />
                 </div>
@@ -106,10 +106,10 @@ export default function IletisimPage() {
                 <div className="border border-[#292d30] rounded-[12px] p-5 bg-[#0b0e14]">
                   <div className="text-[#6c6c6c] text-[12px] mb-1.5 uppercase tracking-wider font-medium">Telefon</div>
                   <a
-                    href="tel:+90XXXXXXXXXX"
+                    href="tel:+905346300059"
                     className="text-[#f0f0f0] text-[16px] hover:text-[#3b9eff] transition-colors font-mono"
                   >
-                    +90 (XXX) XXX XX XX
+                    +90 (534) 630 00 59
                   </a>
                 </div>
 
@@ -117,10 +117,10 @@ export default function IletisimPage() {
                 <div className="border border-[#292d30] rounded-[12px] p-5 bg-[#0b0e14]">
                   <div className="text-[#6c6c6c] text-[12px] mb-1.5 uppercase tracking-wider font-medium">E-posta</div>
                   <a
-                    href="mailto:info@strovainsaat.com"
+                    href="mailto:strovainsaat@gmail..com"
                     className="text-[#f0f0f0] text-[16px] hover:text-[#3b9eff] transition-colors"
                   >
-                    info@strovainsaat.com
+                    strovainsaat@gmail.com.com
                   </a>
                 </div>
 
