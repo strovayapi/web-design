@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     // Link paylaşıldığında çıkacak resmi buraya tanımlıyoruz:
     images: [
       {
-        url: "/opengraph-image.png", // public klasörüne attığınız resmin adı ve uzantısı
+        url: "/opengraph-image.jpeg", // public klasörüne attığınız resmin adı ve uzantısı
         width: 1200,
         height: 630,
         alt: "Strova İnşaat",
