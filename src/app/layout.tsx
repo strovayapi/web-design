@@ -18,7 +18,6 @@ const dmSerifDisplay = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  // Ana sayfa için doğrudan "Strova İnşaat" yazar, diğer sayfalarda ise "Hizmetler | Strova İnşaat" şablonunu korur.
   title: {
     default: "Strova İnşaat",
     template: "%s | Strova İnşaat",
@@ -43,6 +42,15 @@ export const metadata: Metadata = {
     description: "Konut Geliştirme, Kentsel Dönüşüm & Yapı Çözümleri",
     locale: "tr_TR",
     type: "website",
+    // Link paylaşıldığında çıkacak resmi buraya tanımlıyoruz:
+    images: [
+      {
+        url: "/opengraph-image.png", // public klasörüne attığınız resmin adı ve uzantısı
+        width: 1200,
+        height: 630,
+        alt: "Strova İnşaat",
+      },
+    ],
   },
 };
 
