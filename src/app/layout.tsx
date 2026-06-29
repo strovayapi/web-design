@@ -65,7 +65,7 @@ export default function RootLayout({
     >
       <head>
         {/* İkon kodunu buraya ekleyin */}
-        <link rel="icon" href="/opengraph-image.jpeg" type="image/jpeg" />
+        <link rel="icon" href="/ico.jpg" type="image/jpg" />
       </head>
       <body className="min-h-full flex flex-col bg-black text-[#f0f0f0]">
         <Navbar />
