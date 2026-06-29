@@ -4,23 +4,23 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Hizmetler",
   description:
-    "Strova İnşaat modern konut geliştirme, kentsel dönüşüm, güvenli yapım ve yıkım işleri ile gayrimenkul yatırım danışmanlığı hizmetleri sunmaktadır.",
+    "Strova İnşaat modern kentsel dönüşüm, konut geliştirme ve güvenli bina yapım işleri alanlarında kurumsal çözümler sunmaktadır.",
 };
 
 const services = [
   {
     number: "01",
-    title: "Konut Geliştirme & Projeler",
-    description:
-      "Modern mimari anlayışı, kaliteli işçilik ve güvenilir yapı felsefesiyle yaşam kalitesini artıran konut projeleri üretiyoruz. Estetik ve fonksiyonelliği harmanlayarak geleceğin ihtiyaçlarına cevap veren yaşam alanları tasarlıyoruz.",
-    items: ["Lüks Konut Projeleri", "Villa & Müstakil Evler", "Modern Rezidanslar", "Konut Satış & Pazarlama"],
-  },
-  {
-    number: "02",
     title: "Kentsel Dönüşüm",
     description:
       "Eski ve depreme dayanıksız yapıları, en güncel mühendislik standartlarına ve modern mimariye uygun, güvenli yaşam alanlarına dönüştürüyoruz. Süreci başından sonuna kadar şeffaf ve hukuki kurallara tam uyumlu şekilde yönetiyoruz.",
     items: ["Riskli Yapı Tespiti", "Hak Sahipleri Uzlaşma", "Projelendirme & Ruhsat", "Yeniden Yapım Süreçleri"],
+  },
+  {
+    number: "02",
+    title: "Konut Geliştirme & Projeler",
+    description:
+      "Modern mimari anlayışı, kaliteli işçilik ve güvenilir yapı felsefesiyle yaşam kalitesini artıran konut projeleri üretiyoruz. Estetik ve fonksiyonelliği harmanlayarak geleceğin ihtiyaçlarına cevap veren yaşam alanları tasarlıyoruz.",
+    items: ["Lüks Konut Projeleri", "Villa & Müstakil Evler", "Modern Rezidanslar", "Konut Satış & Pazarlama"],
   },
   {
     number: "03",
@@ -28,20 +28,6 @@ const services = [
     description:
       "Çağdaş mühendislik teknikleri ve birinci sınıf malzeme seçimiyle, projelendirilen konutların anahtar teslim yapım süreçlerini üstleniyoruz. Söz verdiğimiz takvime sadık kalarak güvenli yapılar inşa ediyoruz.",
     items: ["Kaba & İnce İnşaat", "Anahtar Teslim Yapım", "Teknik Uygulama", "İş Güvenliği & Denetim"],
-  },
-  {
-    number: "04",
-    title: "Güvenli Yıkım Hizmetleri",
-    description:
-      "Kentsel dönüşüm veya yeniden yapım projeleri kapsamında, çevreye ve çevre binalara zarar vermeden, tüm güvenlik önlemlerini alarak profesyonel yıkım ve hafriyat süreçlerini yürütüyoruz.",
-    items: ["Çevre Güvenlik Önlemleri", "Yıkım Ruhsatı & İzinler", "Kontrollü Yıkım", "Hafriyat & Atık Yönetimi"],
-  },
-  {
-    number: "05",
-    title: "Gayrimenkul Yatırım Danışmanlığı",
-    description:
-      "Konut sektöründeki derin bilgi birikimimizle, yatırım değeri yüksek ve kalıcı değer üretecek projeler için profesyonel pazar analizi ve gayrimenkul danışmanlığı hizmeti sağlıyoruz.",
-    items: ["Fizibilite & Pazar Analizi", "Değerleme Danışmanlığı", "Yatırım Stratejileri", "Doğru Lokasyon Analizi"],
   },
 ];
 
@@ -63,7 +49,7 @@ export default function HizmetlerPage() {
             <span className="text-[#a1a4a5]">Yapı Çözümleri</span>
           </h1>
           <p className="text-[#a1a4a5] text-[18px] leading-[1.6] max-w-[550px]">
-            Kalite, güven ve sürdürülebilirlik ilkeleriyle konut geliştirme, kentsel dönüşüm ve yatırım danışmanlığında kurumsal çözümler sunuyoruz.
+            Kalite, güven ve sürdürülebilirlik ilkeleriyle kentsel dönüşüm, konut geliştirme ve yapı işlerinde kurumsal çözümler sunuyoruz.
           </p>
         </div>
       </section>
