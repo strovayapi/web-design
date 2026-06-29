@@ -18,8 +18,9 @@ const dmSerifDisplay = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
+  // Ana sayfa için doğrudan "Strova İnşaat" yazar, diğer sayfalarda ise "Hizmetler | Strova İnşaat" şablonunu korur.
   title: {
-    default: "Strova İnşaat | Konut Geliştirme, Kentsel Dönüşüm & Yatırım",
+    default: "Strova İnşaat",
     template: "%s | Strova İnşaat",
   },
   description:
