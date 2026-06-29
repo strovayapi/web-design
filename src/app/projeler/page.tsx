@@ -3,73 +3,23 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Projeler",
-  description: "Strova İnşaat tarafından tamamlanan konut, ticari ve altyapı projeleri.",
+  description: "Strova İnşaat'ın kentsel dönüşüm ve modern konut geliştirme vizyonunu yansıtan projeleri.",
 };
 
 const projects = [
   {
     id: 1,
-    title: "48. Sokak No.48 Projesi",
-    category: "Konut",
-    year: "2024",
-    location: "İstanbul",
+    title: "Güneşli Bağlar Mahallesi Projesi",
+    category: "Kentsel Dönüşüm",
+    status: "Başlıyor / Yakında",
+    location: "48. Sokak No:48",
     description:
-      "Modern mimari anlayışıyla tasarlanmış, 24 daireli konut kompleksi. Çevre dostu malzemeler ve akıllı ev sistemleriyle donatılmış.",
-    tags: ["Konut", "Modern Mimari", "Akıllı Ev"],
-  },
-  {
-    id: 2,
-    title: "Merkez Plaza Ofis Binası",
-    category: "Ticari",
-    year: "2023",
-    location: "Ankara",
-    description:
-      "15 katlı, A+ enerji sertifikalı ofis binası. 8.000 m² kiralık ofis alanı, çok katlı otopark ve ticari zemin kat.",
-    tags: ["Ticari", "Ofis", "A+ Enerji"],
-  },
-  {
-    id: 3,
-    title: "Kentsel Altyapı Yenileme",
-    category: "Altyapı",
-    year: "2023",
-    location: "İzmir",
-    description:
-      "12 km uzunluğundaki kentsel altyapı modernizasyon projesi. Su, kanalizasyon ve fiber optik altyapısı yenilendi.",
-    tags: ["Altyapı", "Kentsel", "Modernizasyon"],
-  },
-  {
-    id: 4,
-    title: "Deniz Kenarı Villaları",
-    category: "Konut",
-    year: "2022",
-    location: "Muğla",
-    description:
-      "Ege kıyısında 8 adet lüks villa projesi. Her villa özel havuz ve deniz manzarasına sahip.",
-    tags: ["Villa", "Lüks", "Kıyı"],
-  },
-  {
-    id: 5,
-    title: "Endüstriyel Depo & Lojistik",
-    category: "Endüstriyel",
-    year: "2022",
-    location: "Bursa",
-    description:
-      "25.000 m² kapalı alan, modern depo ve lojistik merkezi. Soğuk hava deposu ve ofis alanları dahil.",
-    tags: ["Endüstriyel", "Depo", "Lojistik"],
-  },
-  {
-    id: 6,
-    title: "Okul Kompleksi Restorasyon",
-    category: "Restorasyon",
-    year: "2021",
-    location: "İstanbul",
-    description:
-      "1930'lardan kalma tarihi okul binasının restorasyon projesi. Özgün mimari korunarak modern iç mekan tasarımı uygulandı.",
-    tags: ["Restorasyon", "Tarihi Yapı", "Eğitim"],
+      "Strova İnşaat güvencesiyle hayata geçirilecek projemize ait tüm detaylar çok yakında burada paylaşılacaktır.",
+    tags: ["Kentsel Dönüşüm", "Modern Yapı", "Güvenilir Çözümler"],
   },
 ];
 
-const categories = ["Tümü", "Konut", "Ticari", "Altyapı", "Endüstriyel", "Restorasyon"];
+const categories = ["Tümü", "Kentsel Dönüşüm"];
 
 export default function ProjelerPage() {
   return (
@@ -84,12 +34,12 @@ export default function ProjelerPage() {
             className="text-[48px] md:text-[72px] font-[400] leading-[1] tracking-[-0.05em] text-white mb-6"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            Tamamlanan
+            Mevcut
             <br />
-            <span className="text-[#a1a4a5]">işlerimiz</span>
+            <span className="text-[#a1a4a5]">Projelerimiz</span>
           </h1>
-          <p className="text-[#a1a4a5] text-[18px] leading-[1.6] max-w-[500px]">
-            150+ tamamlanan proje ile Türkiye&apos;nin dört bir yanında kaliteli yapılar inşa ettik.
+          <p className="text-[#a1a4a5] text-[18px] leading-[1.6] max-w-[550px]">
+            Strova İnşaat olarak, modern mimariyi güvenilir yapı anlayışıyla buluşturuyor; yaşam kalitesini artıran yatırım değeri yüksek projeler geliştiriyoruz.
           </p>
         </div>
       </section>
@@ -125,7 +75,7 @@ export default function ProjelerPage() {
               >
                 {/* Image placeholder */}
                 <div className="h-[200px] bg-[#1b1b1b] border-b border-[#292d30] flex items-center justify-center">
-                  <span className="text-[#464a4d] text-[13px]">Fotoğraf eklenecek</span>
+                  <span className="text-[#464a4d] text-[13px]">Görsel Çalışma Hazırlanıyor</span>
                 </div>
 
                 <div className="p-6">
@@ -133,7 +83,7 @@ export default function ProjelerPage() {
                     <span className="border border-[#292d30] rounded-[6px] px-2 py-0.5 text-[11px] text-[#a1a4a5]">
                       {project.category}
                     </span>
-                    <span className="text-[#6c6c6c] text-[12px]">{project.year}</span>
+                    <span className="text-[#3b9eff] text-[12px] font-medium">{project.status}</span>
                   </div>
                   <h2 className="text-white font-medium text-[16px] mb-2 group-hover:text-[#f0f0f0]">
                     {project.title}
@@ -158,14 +108,14 @@ export default function ProjelerPage() {
       <section className="py-[80px] bg-black border-t border-[#292d30]">
         <div className="max-w-[1200px] mx-auto px-6 text-center">
           <h2 className="text-[36px] font-[400] text-white mb-4" style={{ fontFamily: "var(--font-display)" }}>
-            Bir sonraki projeniz için hazırız
+            Projelerimiz Hakkında Bilgi Alın
           </h2>
-          <p className="text-[#a1a4a5] text-[16px] mb-8">Hayalinizeki projeyi birlikte hayata geçirelim.</p>
+          <p className="text-[#a1a4a5] text-[16px] mb-8">Geliştirdiğimiz kentsel dönüşüm süreçleri hakkında detaylı bilgi almak için bizimle iletişime geçebilirsiniz.</p>
           <Link
             href="/iletisim"
             className="inline-flex items-center gap-2 border border-[#3b9eff] rounded-[6px] px-8 py-3 text-[15px] font-medium text-white hover:bg-[#3b9eff]/10 transition-colors"
           >
-            Teklif Al
+            Bize Ulaşın
           </Link>
         </div>
       </section>
