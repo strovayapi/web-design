@@ -1,10 +1,4 @@
-import type { Metadata } from "next";
 import Link from "next/link";
-
-// Sekme adını hatasız bir şekilde sadece "Strova İnşaat" yapar
-export const metadata: Metadata = {
-  title: "Strova İnşaat",
-};
 
 export default function HomePage() {
   return (
@@ -30,28 +24,8 @@ export default function HomePage() {
 
         {/* Kısa Tanıtım Metni */}
         <p className="text-[#a1a4a5] text-[16px] sm:text-[18px] md:text-[20px] leading-[1.6] max-w-[600px] mb-12 font-light">
-          Strova İnşaat olarak, modern mimariyi kaliteli işçilik and güvenilir kentsel dönüşüm anlayışıyla buluşturuyoruz. Yaşam kalitesini artıran ve değer üreten projeler geliştiriyoruz.
+          Strova İnşaat olarak, modern mimariyi kaliteli işçilik ve güvenilir kentsel dönüşüm anlayışıyla buluşturuyoruz. Yaşam kalitesini artıran ve değer üreten projeler geliştiriyoruz.
         </p>
-
-        {/* Aksiyon Butonları */}
-        <div className="flex flex-wrap gap-4">
-          <Link
-            href="/projeler"
-            className="text-[14px] font-medium text-black bg-white hover:bg-[#f0f0f0] rounded-[6px] px-8 py-3.5 transition-colors duration-150"
-          >
-            Projelerimizi İnceleyin
-          </Link>
-          <Link
-            href="/hizmetler"
-            className="text-[14px] font-medium text-white border border-[#292d30] hover:border-[#464a4d] rounded-[6px] px-8 py-3.5 transition-colors duration-150"
-          >
-            Hizmetlerimiz
-          </Link>
-        </div>
-      </section>
-    </main>
-  );
-}        </p>
 
         {/* Aksiyon Butonları */}
         <div className="flex flex-wrap gap-4">
