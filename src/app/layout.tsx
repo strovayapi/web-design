@@ -24,6 +24,11 @@ export const metadata: Metadata = {
   },
   description:
     "Strova İnşaat; modern konut geliştirme, güvenilir kentsel dönüşüm, bina yapım ve gayrimenkul yatırım danışmanlığı alanlarında kurumsal çözümler sunar.",
+  icons: {
+    icon: "/favicon-new.ico", // Logonuzun/favicon'un yolu
+    shortcut: "/favicon-new.ico",
+    apple: "/favicon-new.ico",
+  },
   keywords: [
     "inşaat", 
     "kentsel dönüşüm",
@@ -42,10 +47,9 @@ export const metadata: Metadata = {
     description: "Konut Geliştirme, Kentsel Dönüşüm & Yapı Çözümleri",
     locale: "tr_TR",
     type: "website",
-    // Link paylaşıldığında çıkacak resmi buraya tanımlıyoruz:
     images: [
       {
-        url: "/opengraph-image.jpeg", // public klasörüne attığınız resmin adı ve uzantısı
+        url: "/opengraph-image.jpeg",
         width: 1200,
         height: 630,
         alt: "Strova İnşaat",
@@ -53,6 +57,7 @@ export const metadata: Metadata = {
     ],
   },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -63,10 +68,6 @@ export default function RootLayout({
       lang="tr"
       className={`${inter.variable} ${dmSerifDisplay.variable} h-full antialiased`}
     >
-      <head>
-        {/* İkon kodunu buraya ekleyin */}
-        <link rel="icon" href="/favicon-new.ico" type="image/x-ico" />
-      </head>
       <body className="min-h-full flex flex-col bg-black text-[#f0f0f0]">
         <Navbar />
         <main className="flex-1">{children}</main>
