@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -18,23 +17,12 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 h-[59px] bg-black/80 backdrop-blur-[25px] border-b border-[#292d30]">
       <div className="max-w-[1200px] mx-auto px-6 h-full flex items-center justify-between">
-        
-        {/* Logo Bölümü */}
-        <Link href="/" className="flex items-center gap-3">
-          {/* Görsel Logo - 1.5x Daha Büyük ve Tam Ortalanmış */}
-          <div className="flex items-center h-[59px]">
-            <Image 
-              src="/logo.png" 
-              alt="Strova" 
-              width={260}  
-              height={70}  
-              className="h-[52px] w-auto object-contain" 
-              priority
-            />
-          </div>
-          
-          {/* İNŞAAT metni - Dikeyde logonun ortasına hizalandı */}
-          <span className="text-[#a1a4a5] text-[12px] tracking-[0.2em] uppercase border-l border-[#292d30] pl-3 py-0.5">
+        {/* Logo */}
+        <Link href="/" className="flex items-center gap-2">
+          <span className="text-white font-semibold text-[16px] tracking-[0.15em] uppercase">
+            STROVA
+          </span>
+          <span className="text-[#a1a4a5] text-[11px] tracking-[0.2em] uppercase border-l border-[#292d30] pl-2">
             İnşaat
           </span>
         </Link>
@@ -66,7 +54,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Mobile Hamburger */}
+        {/* Mobile hamburger */}
         <button
           className="md:hidden text-[#f0f0f0] p-1"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -74,9 +62,17 @@ export default function Navbar() {
         >
           <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
             {menuOpen ? (
-              <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+              <path
+                fillRule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
             ) : (
-              <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+              <path
+                fillRule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clipRule="evenodd"
+              />
             )}
           </svg>
         </button>
