@@ -1,12 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import type { Metadata } from "next";
-
-// Not: Next.js'te 'use client' kullanılan dosyalarda metadata 
-// aynı dosya içinde dışa aktarılamaz. Metadata'yı ayrı bir 
-// 'layout.tsx' veya ayrı bir dosya üzerinden yönetmeniz önerilir.
-// Bu sayfayı 'iletisim/page.tsx' olarak kullanmaya devam edebilirsiniz.
 
 export default function IletisimPage() {
   const [status, setStatus] = useState("");
@@ -50,6 +44,8 @@ export default function IletisimPage() {
       <section className="py-[80px] bg-black">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            
+            {/* Form Kısmı */}
             <div>
               <h2 className="text-white font-semibold text-[20px] mb-8">Mesaj Gönderin</h2>
               <form 
@@ -78,9 +74,10 @@ export default function IletisimPage() {
               </form>
             </div>
 
+            {/* İletişim ve Sosyal Medya Kısmı */}
             <div>
               <h2 className="text-white font-semibold text-[20px] mb-8">İletişim Bilgileri</h2>
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 mb-12">
                 <div className="border border-[#292d30] rounded-[12px] p-5 bg-[#0b0e14]">
                   <div className="text-[#6c6c6c] text-[12px] uppercase tracking-wider">Telefon</div>
                   <a href="tel:+905346300059" className="text-[#f0f0f0] hover:text-[#3b9eff]">+90 (534) 630 00 59</a>
@@ -90,7 +87,19 @@ export default function IletisimPage() {
                   <a href="mailto:strovainsaat@gmail.com" className="text-[#f0f0f0] hover:text-[#3b9eff]">strovainsaat@gmail.com</a>
                 </div>
               </div>
+
+              {/* Sosyal Medya */}
+              <h2 className="text-white font-semibold text-[20px] mb-8">Bizi Takip Edin</h2>
+              <div className="flex gap-4">
+                <a href="https://tiktok.com/@KULLANICI_ADINIZ" target="_blank" rel="noopener noreferrer" className="p-4 bg-[#0b0e14] border border-[#292d30] rounded-[12px] hover:border-[#3b9eff] transition-colors">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"></path></svg>
+                </a>
+                <a href="https://x.com/KULLANICI_ADINIZ" target="_blank" rel="noopener noreferrer" className="p-4 bg-[#0b0e14] border border-[#292d30] rounded-[12px] hover:border-[#3b9eff] transition-colors">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+                </a>
+              </div>
             </div>
+
           </div>
         </div>
       </section>
