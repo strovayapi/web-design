@@ -20,18 +20,18 @@ export default function Navbar() {
       <div className="max-w-[1200px] mx-auto px-6 h-full flex items-center justify-between">
         
         {/* Logo Bölümü */}
-        <Link href="/" className="flex items-center gap-2">
-          {/* Görsel Logo - Yükseklik artırıldı */}
+        <Link href="/" className="flex items-center gap-2 items-baseline">
+          {/* Görsel Logo - Yüksekliği ve dolgunluğu artırdık */}
           <Image 
             src="/logo.png" 
             alt="Strova" 
-            width={240}  
-            height={60}  
-            className="h-[48px] w-auto object-contain object-left" 
+            width={300}  
+            height={80}  
+            className="h-[52px] w-auto object-contain object-left" 
             priority
           />
-          {/* Yanına eklenen İNŞAAT metni */}
-          <span className="text-[#a1a4a5] text-[12px] tracking-[0.2em] uppercase border-l border-[#292d30] pl-2 mt-1">
+          {/* İNŞAAT metni - Görsele göre biraz daha küçük ve hizalı */}
+          <span className="text-[#a1a4a5] text-[11px] tracking-[0.2em] uppercase border-l border-[#292d30] pl-2 pb-1">
             İnşaat
           </span>
         </Link>
