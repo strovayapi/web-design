@@ -20,22 +20,23 @@ export default function Navbar() {
       <div className="max-w-[1200px] mx-auto px-6 h-full flex items-center justify-between">
         
         {/* Logo Bölümü */}
-        <Link href="/" className="flex items-center gap-2">
-          {/* Görsel Logo - 1.5 Kat Büyütüldü */}
-          <div className="flex items-end h-[59px]">
+        <Link href="/" className="flex items-center gap-3">
+          {/* Görsel Logo - 1.5x Daha Büyük ve Tam Ortalanmış */}
+          <div className="flex items-center h-[59px]">
             <Image 
               src="/logo.png" 
               alt="Strova" 
-              width={400}  
-              height={100}  
-              className="h-[56px] w-auto object-contain object-left mb-[2px]" 
+              width={260}  
+              height={70}  
+              className="h-[52px] w-auto object-contain" 
               priority
             />
-            {/* İNŞAAT metni - Görselin tabanına hizalandı */}
-            <span className="text-[#a1a4a5] text-[12px] tracking-[0.2em] uppercase border-l border-[#292d30] pl-2 mb-[4px]">
-              İnşaat
-            </span>
           </div>
+          
+          {/* İNŞAAT metni - Dikeyde logonun ortasına hizalandı */}
+          <span className="text-[#a1a4a5] text-[12px] tracking-[0.2em] uppercase border-l border-[#292d30] pl-3 py-0.5">
+            İnşaat
+          </span>
         </Link>
 
         {/* Desktop Nav */}
@@ -65,7 +66,7 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Mobile hamburger */}
+        {/* Mobile Hamburger */}
         <button
           className="md:hidden text-[#f0f0f0] p-1"
           onClick={() => setMenuOpen(!menuOpen)}
