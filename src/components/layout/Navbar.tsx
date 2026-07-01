@@ -21,17 +21,17 @@ export default function Navbar() {
         
         {/* Logo Bölümü */}
         <Link href="/" className="flex items-center gap-2">
-          {/* Görsel Logo */}
+          {/* Görsel Logo - Yükseklik artırıldı */}
           <Image 
             src="/logo.png" 
             alt="Strova" 
-            width={160}  
-            height={40}  
-            className="h-[36px] w-auto object-contain"
+            width={240}  
+            height={60}  
+            className="h-[48px] w-auto object-contain object-left" 
             priority
           />
           {/* Yanına eklenen İNŞAAT metni */}
-          <span className="text-[#a1a4a5] text-[11px] tracking-[0.2em] uppercase border-l border-[#292d30] pl-2">
+          <span className="text-[#a1a4a5] text-[12px] tracking-[0.2em] uppercase border-l border-[#292d30] pl-2 mt-1">
             İnşaat
           </span>
         </Link>
