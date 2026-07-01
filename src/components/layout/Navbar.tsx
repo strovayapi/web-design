@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image"; // Image bileşenini ekledik
+import Image from "next/image"; 
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -19,14 +19,14 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 h-[59px] bg-black/80 backdrop-blur-[25px] border-b border-[#292d30]">
       <div className="max-w-[1200px] mx-auto px-6 h-full flex items-center justify-between">
         
-        {/* Logo Bölümü */}
+        {/* Logo Bölümü: "STROVA | İNŞAAT" görseli buraya gelecek */}
         <Link href="/" className="flex items-center">
           <Image 
             src="/logo.png" 
             alt="Strova İnşaat" 
-            width={140} 
-            height={30} 
-            className="h-[30px] w-auto object-contain"
+            width={200}  // Genişliği biraz artırdık (Logonuzun orantısına göre 180-220 arası deneyebilirsiniz)
+            height={40}  // Yüksekliği biraz artırdık
+            className="h-[32px] w-auto object-contain object-left" // h-[32px] ile metin yüksekliğiyle tam uyum sağladık
             priority
           />
         </Link>
