@@ -51,17 +51,6 @@ export const metadata: Metadata = {
       },
     ],
   },
-  // Google'ın markanızı tüm yazım hatalarıyla eşleştirmesi için Schema Markup
-  other: {
-    "application/ld+json": JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Strova İnşaat",
-      "alternateName": ["Strova İnsaat", "Strova Yapı", "Strova Yapi", "Strovainsaat"],
-      "url": "https://www.strovainsaat.com", // BURAYI GERÇEK DOMAIN'İNİZLE DEĞİŞTİRİN
-      "logo": "https://www.strovainsaat.com/strova32x32.svg" // BURAYI GERÇEK DOMAIN'İNİZLE DEĞİŞTİRİN
-    }),
-  },
 };
 
 export default function RootLayout({
@@ -74,6 +63,21 @@ export default function RootLayout({
       lang="tr"
       className={`${inter.variable} ${dmSerifDisplay.variable} h-full antialiased`}
     >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Strova İnşaat",
+              "alternateName": ["Strova İnsaat", "Strova Yapı", "Strova Yapi", "Strovainsaat"],
+              "url": "https://www.strovainsaat.com", // BURAYI GERÇEK DOMAIN'İNİZLE DEĞİŞTİRİN
+              "logo": "https://www.strovainsaat.com/strova32x32.svg" // BURAYI GERÇEK DOMAIN'İNİZLE DEĞİŞTİRİN
+            }),
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-black text-[#f0f0f0]">
         <Navbar />
         <main className="flex-1">{children}</main>
