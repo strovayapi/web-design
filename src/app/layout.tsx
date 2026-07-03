@@ -25,9 +25,11 @@ export const metadata: Metadata = {
   description:
     "Strova İnşaat; modern konut geliştirme, güvenilir kentsel dönüşüm, bina yapım ve gayrimenkul yatırım danışmanlığı alanlarında kurumsal çözümler sunar.",
   icons: {
-    icon: "/favicon-new.ico", // Logonuzun/favicon'un yolu
-    shortcut: "/favicon-new.ico",
-    apple: "/favicon-new.ico",
+    icon: [
+      { url: "/strova32x32.svg", type: "image/svg+xml" },
+    ],
+    shortcut: "/strova32x32.svg",
+    apple: "/strova32x32.svg",
   },
   keywords: [
     "inşaat", 
