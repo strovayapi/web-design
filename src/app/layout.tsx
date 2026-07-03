@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, DM_Serif_Display } from "next/font/google";
+import Script from "next/script"; // Script bileşenini import ettik
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -25,9 +26,7 @@ export const metadata: Metadata = {
   description:
     "Strova İnşaat; modern konut geliştirme, güvenilir kentsel dönüşüm, bina yapım ve gayrimenkul yatırım danışmanlığı alanlarında kurumsal çözümler sunar.",
   icons: {
-    icon: [
-      { url: "/strova32x32.svg", type: "image/svg+xml" },
-    ],
+    icon: [{ url: "/strova32x32.svg", type: "image/svg+xml" }],
     shortcut: "/strova32x32.svg",
     apple: "/strova32x32.svg",
   },
@@ -35,7 +34,7 @@ export const metadata: Metadata = {
     "inşaat", "kentsel dönüşüm", "yapı", "bina", "yapım", "yıkım",
     "konut geliştirme", "konut projesi", "yatırım danışmanlığı", 
     "strova", "strova inşaat", "strova insaat", "strova yapi", 
-    "strova yapı", "strovainsaat", "strovainsaat", "strova yapı inşaat"
+    "strova yapı", "strovainsaat", "strova yapı inşaat"
   ],
   openGraph: {
     title: "Strova İnşaat",
@@ -58,24 +57,26 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Strova İnşaat",
+    "alternateName": ["Strova İnsaat", "Strova Yapı", "Strova Yapi", "Strovainsaat"],
+    "url": "https://www.strovainsaat.com", // Kendi adresinizle güncelleyin
+    "logo": "https://www.strovainsaat.com/strova32x32.svg" // Kendi adresinizle güncelleyin
+  };
+
   return (
     <html
       lang="tr"
       className={`${inter.variable} ${dmSerifDisplay.variable} h-full antialiased`}
     >
       <head>
-        <script
+        {/* Next.js'in resmi önerdiği Script yöntemi */}
+        <Script
+          id="schema-org"
           type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Strova İnşaat",
-              "alternateName": ["Strova İnsaat", "Strova Yapı", "Strova Yapi", "Strovainsaat"],
-              "url": "https://www.strovainsaat.com", // BURAYI GERÇEK DOMAIN'İNİZLE DEĞİŞTİRİN
-              "logo": "https://www.strovainsaat.com/strova32x32.svg" // BURAYI GERÇEK DOMAIN'İNİZLE DEĞİŞTİRİN
-            }),
-          }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
       <body className="min-h-full flex flex-col bg-black text-[#f0f0f0]">
