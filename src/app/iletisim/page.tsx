@@ -84,7 +84,7 @@ export default function IletisimPage() {
                 </div>
                 <div className="border border-[#292d30] rounded-[12px] p-5 bg-[#0b0e14]">
                   <div className="text-[#6c6c6c] text-[12px] uppercase tracking-wider">E-posta</div>
-                  <a href="mailto:strovainsaat@gmail.com" className="text-[#f0f0f0] hover:text-[#3b9eff]">strovainsaat@gmail.com</a>
+                  <a href="mailto:info@strovainsaat.com" className="text-[#f0f0f0] hover:text-[#3b9eff]">info@strovainsaat.com</a>
                 </div>
               </div>
 
