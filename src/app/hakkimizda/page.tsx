@@ -4,6 +4,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Hakkımızda",
   description: "Strova İnşaat kurumsal değerleri, modern mimari anlayışı ve sürdürülebilir konut geliştirme vizyonu hakkında bilgi edinin.",
+  alternates: {
+    canonical: "https://www.strovainsaat.com/hakkimizda",
+  },
 };
 
 export default function HakkimizdaPage() {
