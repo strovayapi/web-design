@@ -2,6 +2,16 @@
 
 import { useState } from "react";
 
+// Google Search Console'daki "Kullanıcı tarafından seçilen standart sayfa olmadan kopya" 
+// hatasını çözmek için sayfanın asıl adresini (canonical) tanıtıyoruz:
+export const metadata = {
+  title: "İletişim",
+  description: "Projeniz hakkında bilgi almak, teklif istemek veya bizimle iletişime geçmek için formumuzu doldurun.",
+  alternates: {
+    canonical: "https://www.strovainsaat.com/iletisim",
+  },
+};
+
 export default function IletisimPage() {
   const [status, setStatus] = useState("");
 
