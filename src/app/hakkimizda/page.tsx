@@ -28,7 +28,7 @@ export default function HakkimizdaPage() {
         {/* Metin İçeriği */}
         <div className="flex flex-col gap-6 text-[16px] leading-[1.8] text-[#f0f0f0]/90 font-light">
           <p>
-            Strova İnşaat, 2026 yılında kurulmuş olup konut geliştirme ve satış alanında faaliyet göstermektedir. 
+            Strova İnşaat, 2026 yılında kurulmuş olup kentsel dönüşüm ve konut yapımı alanında faaliyet göstermektedir. 
             Kurulduğu günden bu yana kalite, güven ve sürdürülebilirlik ilkelerini esas alarak sektörde güçlü 
             ve kurumsal bir yapı oluşturmayı hedeflemektedir.
           </p>
