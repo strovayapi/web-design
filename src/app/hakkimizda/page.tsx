@@ -17,10 +17,13 @@ export default function HakkimizdaPage() {
         
         {/* Sayfa Başlığı */}
         <div className="border-b border-[#292d30] pb-6 mb-10">
-          <h1 className="text-[32px] font-bold tracking-tight text-white uppercase">
+          <h1
+            className="text-[48px] md:text-[72px] font-[400] leading-[1] tracking-[-0.05em] text-white"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
             Hakkımızda
           </h1>
-          <p className="text-[#a1a4a5] text-[14px] mt-2 tracking-wide uppercase">
+          <p className="text-[#a1a4a5] text-[16px] sm:text-[18px] leading-[1.6] mt-4 font-light">
             Strova İnşaat — Kalite, Güven ve Sürdürülebilirlik
           </p>
         </div>
