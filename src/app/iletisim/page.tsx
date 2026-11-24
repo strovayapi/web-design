@@ -31,11 +31,14 @@ export default function IletisimPage() {
           <div className="inline-flex items-center gap-2 border border-[#292d30] rounded-[10px] px-3 py-1.5 mb-8">
             <span className="text-[#a1a4a5] text-[13px] tracking-[0.05em]">İLETİŞİM</span>
           </div>
-          <h1 className="text-[48px] md:text-[72px] font-[400] leading-[1] tracking-[-0.05em] text-white mb-6">
+          <h1
+            className="text-[48px] md:text-[72px] font-[400] leading-[1] tracking-[-0.05em] text-white mb-6"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
             Hayallerinizi<br />
             <span className="text-[#a1a4a5]">konuşalım</span>
           </h1>
-          <p className="text-[#a1a4a5] text-[18px] leading-[1.6] max-w-[500px]">
+          <p className="text-[#a1a4a5] text-[18px] leading-[1.6] max-w-[500px] font-light">
             Projeniz hakkında bilgi almak, teklif istemek veya sadece merhaba demek için bize ulaşın.
           </p>
         </div>
