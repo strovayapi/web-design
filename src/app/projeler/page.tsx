@@ -40,7 +40,7 @@ export default function ProjelerPage() {
             <br />
             <span className="text-[#a1a4a5]">Projelerimiz</span>
           </h1>
-          <p className="text-[#a1a4a5] text-[18px] leading-[1.6] max-w-[550px]">
+          <p className="text-[#a1a4a5] text-[18px] leading-[1.6] max-w-[550px] font-light">
             Strova İnşaat olarak, modern mimariyi güvenilir yapı anlayışıyla buluşturuyor; yaşam kalitesini artıran yatırım değeri yüksek projeler geliştiriyoruz.
           </p>
         </div>
