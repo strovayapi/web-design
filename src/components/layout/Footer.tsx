@@ -61,7 +61,7 @@ export default function Footer() {
                 Telefon
               </a>
               <a
-                href="mailto:strovainsaat@gmail.com"
+                href="mailto:info@strovainsaat.com"
                 className="text-[#a1a4a5] text-[14px] hover:text-[#f0f0f0] transition-colors"
               >
                 E-posta
