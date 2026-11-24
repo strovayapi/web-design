@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Hizmetler",
   description:
-    "Kentsel dönüşüm, kat karşılığı ve ücret karşılığı inşaat, konut geliştirme ve anahtar teslim bina yapımı. Strova İnşaat; Bağcılar, Güneşli ve İstanbul genelinde hizmet verir.",
+    "Kentsel dönüşümde kat karşılığı yapım, ücret karşılığı anahtar teslim bina ve villa yapımı, mevcut yapılarda iç ve dış cephe inşaat işleri. Strova İnşaat; Bağcılar, Güneşli ve İstanbul genelinde hizmet verir.",
   alternates: {
     canonical: "/hizmetler",
   },
@@ -13,31 +13,24 @@ export const metadata: Metadata = {
 const services = [
   {
     number: "01",
-    title: "Kentsel Dönüşüm",
+    title: "Kentsel Dönüşüm – Kat Karşılığı Yapım",
     description:
-      "Eski ve depreme dayanıksız yapıları, en güncel mühendislik standartlarına ve modern mimariye uygun, güvenli yaşam alanlarına dönüştürüyoruz. Süreci başından sonuna kadar şeffaf ve hukuki kurallara tam uyumlu şekilde yönetiyoruz.",
-    items: ["Riskli Yapı Tespiti", "Hak Sahipleri Uzlaşma", "Projelendirme & Ruhsat", "Yeniden Yapım Süreçleri"],
+      "Eski ve depreme dayanıksız yapıları, arsa ve bina sahipleriyle kat karşılığı modelde yeniliyoruz. Yapının maliyetini biz üstleniyor, karşılığında sözleşmede belirlenen bağımsız bölümleri alıyoruz. Riskli yapı tespitinden ruhsata ve teslime kadar tüm süreci şeffaf, hukuki kurallara uygun ve inşaat mühendisi gözetiminde yürütüyoruz.",
+    items: ["Riskli Yapı Tespiti", "Hak Sahipleri Uzlaşma", "Kat Karşılığı Sözleşme", "Projelendirme & Ruhsat", "Yeniden Yapım Süreçleri"],
   },
   {
     number: "02",
-    title: "Kat Karşılığı & Ücret Karşılığı İnşaat",
+    title: "Ücret Karşılığı Yapım",
     description:
-      "Arsa ve eski bina sahipleriyle iki farklı modelle çalışıyoruz. Kat karşılığı modelde yapının maliyetini üstleniyor, karşılığında sözleşmede belirlenen bağımsız bölümleri alıyoruz. Ücret karşılığı modelde ise yapımı, sözleşmede belirlenen bedel karşılığında mal sahibi adına gerçekleştiriyoruz. Her iki modelde de süreci inşaat mühendisi gözetiminde, şeffaf bir sözleşmeyle yürütüyoruz.",
-    items: ["Kat Karşılığı Sözleşme", "Ücret Karşılığı Yapım", "Projelendirme & Ruhsat", "Anahtar Teslim"],
+      "Yapının sahibi sizsiniz, inşaatını biz üstleniyoruz. Kentsel dönüşüm kapsamındaki binalardan villa ve müstakil evlere kadar yapımı, sözleşmede belirlenen bedel karşılığında mal sahibi adına anahtar teslim gerçekleştiriyoruz. Söz verdiğimiz takvime sadık kalarak güvenli yapılar inşa ediyoruz.",
+    items: ["Villa & Müstakil Evler", "Kaba & İnce İnşaat", "Anahtar Teslim Yapım", "Teknik Uygulama", "İş Güvenliği & Denetim"],
   },
   {
     number: "03",
-    title: "Konut Geliştirme & Projeler",
+    title: "Mevcut Yapılarda İnşaat İşleri",
     description:
-      "Modern mimari anlayışı, kaliteli işçilik ve güvenilir yapı felsefesiyle yaşam kalitesini artıran konut projeleri üretiyoruz. Estetik ve fonksiyonelliği harmanlayarak geleceğin ihtiyaçlarına cevap veren yaşam alanları tasarlıyoruz.",
-    items: ["Lüks Konut Projeleri", "Villa & Müstakil Evler", "Modern Rezidanslar", "Konut Satış & Pazarlama"],
-  },
-  {
-    number: "04",
-    title: "Yapım & İnşaat İşleri",
-    description:
-      "Çağdaş mühendislik teknikleri ve birinci sınıf malzeme seçimiyle, projelendirilen konutların anahtar teslim yapım süreçlerini üstleniyoruz. Söz verdiğimiz takvime sadık kalarak güvenli yapılar inşa ediyoruz.",
-    items: ["Kaba & İnce İnşaat", "Anahtar Teslim Yapım", "Teknik Uygulama", "İş Güvenliği & Denetim"],
+      "Mevcut binalarda iç ve dış cephe dahil tüm inşaat işlerini üstleniyoruz. Yapınızı ihtiyaçlarınıza göre yeniliyor, işin her aşamasını mühendislik disipliniyle planlayıp uyguluyoruz.",
+    items: ["İç Mekân İnşaat İşleri", "Dış Cephe İşleri", "Tadilat & Yenileme"],
   },
 ];
 
@@ -59,7 +52,7 @@ export default function HizmetlerPage() {
             <span className="text-[#a1a4a5]">Yapı Çözümleri</span>
           </h1>
           <p className="text-[#a1a4a5] text-[18px] leading-[1.6] max-w-[550px]">
-            Kalite, güven ve sürdürülebilirlik ilkeleriyle kentsel dönüşüm, konut geliştirme ve yapı işlerinde kurumsal çözümler sunuyoruz.
+            Kalite, güven ve sürdürülebilirlik ilkeleriyle kentsel dönüşüm, kat karşılığı ve ücret karşılığı yapım ile mevcut yapılardaki inşaat işlerinde kurumsal çözümler sunuyoruz.
           </p>
         </div>
       </section>
