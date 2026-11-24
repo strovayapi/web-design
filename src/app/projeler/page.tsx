@@ -3,7 +3,11 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Projeler",
-  description: "Strova İnşaat'ın kentsel dönüşüm ve modern konut geliştirme vizyonunu yansıtan projeleri.",
+  description:
+    "Strova İnşaat'ın Bağcılar Güneşli Bağlar Mahallesi'ndeki kentsel dönüşüm projesi ve İstanbul'daki konut projeleri.",
+  alternates: {
+    canonical: "/projeler",
+  },
 };
 
 const projects = [
@@ -18,8 +22,6 @@ const projects = [
     tags: ["Kentsel Dönüşüm", "Modern Yapı", "Güvenilir Çözümler"],
   },
 ];
-
-const categories = ["Tümü", "Kentsel Dönüşüm"];
 
 export default function ProjelerPage() {
   return (
@@ -41,26 +43,6 @@ export default function ProjelerPage() {
           <p className="text-[#a1a4a5] text-[18px] leading-[1.6] max-w-[550px]">
             Strova İnşaat olarak, modern mimariyi güvenilir yapı anlayışıyla buluşturuyor; yaşam kalitesini artıran yatırım değeri yüksek projeler geliştiriyoruz.
           </p>
-        </div>
-      </section>
-
-      {/* Filter categories */}
-      <section className="py-8 bg-black border-b border-[#292d30] sticky top-[59px] z-40 backdrop-blur-[25px] bg-black/90">
-        <div className="max-w-[1200px] mx-auto px-6">
-          <div className="flex gap-2 overflow-x-auto pb-1">
-            {categories.map((cat) => (
-              <button
-                key={cat}
-                className={`shrink-0 border rounded-[6px] px-4 py-1.5 text-[13px] transition-colors ${
-                  cat === "Tümü"
-                    ? "border-[#3b9eff] text-white"
-                    : "border-[#292d30] text-[#a1a4a5] hover:border-[#464a4d] hover:text-[#f0f0f0]"
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
         </div>
       </section>
 
