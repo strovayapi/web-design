@@ -43,7 +43,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Strova İnşaat",
     description: "Konut Geliştirme, Kentsel Dönüşüm & Yapı Çözümleri",
-    url: "https://www.strovainsaat.com",
     siteName: "Strova İnşaat",
     locale: "tr_TR",
     type: "website",
@@ -65,11 +64,48 @@ export default function RootLayout({
 }>) {
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Organization",
+    "@type": "GeneralContractor",
+    "@id": "https://www.strovainsaat.com/#organization",
     "name": "Strova İnşaat",
     "alternateName": ["Strova İnsaat", "Strova Yapı", "Strova Yapi", "Strovainsaat"],
-    "url": "https://www.strovainsaat.com", // Kendi adresinizle güncelleyin
-    "logo": "https://www.strovainsaat.com/strova32x32.svg" // Kendi adresinizle güncelleyin
+    "url": "https://www.strovainsaat.com",
+    "logo": "https://www.strovainsaat.com/logo.png",
+    "image": "https://www.strovainsaat.com/opengraph-image.jpeg",
+    "description":
+      "İstanbul Bağcılar ve Güneşli başta olmak üzere kentsel dönüşüm, kat karşılığı ve ücret karşılığı bina yapımı ile anahtar teslim konut projeleri yürüten inşaat ve müteahhitlik firması.",
+    "telephone": "+90 534 630 00 59",
+    "email": "info@strovainsaat.com",
+    "foundingDate": "2026-02",
+    "founder": {
+      "@type": "Person",
+      "name": "Alper Sevimli",
+      "jobTitle": "İnşaat Mühendisi",
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bağcılar",
+      "addressRegion": "İstanbul",
+      "addressCountry": "TR",
+    },
+    "areaServed": [
+      { "@type": "City", "name": "İstanbul" },
+      { "@type": "AdministrativeArea", "name": "Bağcılar" },
+      { "@type": "Place", "name": "Güneşli" },
+    ],
+    "knowsAbout": [
+      "Kentsel dönüşüm",
+      "Kat karşılığı inşaat",
+      "Ücret karşılığı inşaat",
+      "Anahtar teslim konut yapımı",
+      "Bina yıkımı",
+    ],
+    "openingHours": "Mo-Fr 09:00-18:00",
+    "sameAs": [
+      "https://www.instagram.com/strovainsaat",
+      "https://www.facebook.com/strovainsaat",
+      "https://x.com/strovainsaat",
+      "https://www.tiktok.com/@strovainsaat",
+    ],
   };
 
   return (
