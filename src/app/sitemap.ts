@@ -23,6 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${SITE_URL}/projeler/gunesli-baglar`, // Güneşli Bağlar projesi
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
       url: `${SITE_URL}/hakkimizda`, // Hakkımızda
       lastModified: new Date(),
       changeFrequency: 'monthly',
