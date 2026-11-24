@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Strova İnşaat",
   },
   description:
-    "Strova İnşaat; İstanbul Bağcılar ve Güneşli başta olmak üzere kentsel dönüşüm, kat karşılığı ve ücret karşılığı bina yapımı, anahtar teslim konut projeleri ve gayrimenkul yatırım danışmanlığı alanlarında hizmet veren inşaat ve müteahhitlik firmasıdır.",
+    "Strova İnşaat; İstanbul Bağcılar ve Güneşli başta olmak üzere kentsel dönüşüm, kat karşılığı ve ücret karşılığı bina yapımı, anahtar teslim konut projeleri ile mevcut yapılarda iç ve dış cephe inşaat işleri yürüten inşaat ve müteahhitlik firmasıdır.",
   icons: {
     icon: [{ url: "/strova32x32.svg", type: "image/svg+xml" }],
     shortcut: "/strova32x32.svg",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   },
   keywords: [
     "inşaat", "kentsel dönüşüm", "yapı", "bina", "yapım", "yıkım",
-    "konut geliştirme", "konut projesi", "yatırım danışmanlığı", 
+    "konut projesi", "konut yapımı", "dış cephe", "iç ve dış cephe inşaat işleri", "tadilat",
     "strova", "strova inşaat", "strova insaat", "strova yapi", 
     "strova yapı", "strovainsaat", "strova yapı inşaat",
     "kat karşılığı", "kat karşılığı inşaat", "kat karşılığı müteahhit",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Strova İnşaat",
-    description: "Konut Geliştirme, Kentsel Dönüşüm & Yapı Çözümleri",
+    description: "Kentsel Dönüşüm, Kat Karşılığı & Ücret Karşılığı Yapım",
     siteName: "Strova İnşaat",
     locale: "tr_TR",
     type: "website",
@@ -98,6 +98,7 @@ export default function RootLayout({
       "Ücret karşılığı inşaat",
       "Anahtar teslim konut yapımı",
       "Bina yıkımı",
+      "Mevcut yapılarda iç ve dış cephe inşaat işleri",
     ],
     "openingHours": "Mo-Fr 09:00-18:00",
     "sameAs": [
