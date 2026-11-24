@@ -3,7 +3,8 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Hakkımızda",
-  description: "Strova İnşaat kurumsal değerleri, modern mimari anlayışı ve sürdürülebilir konut geliştirme vizyonu hakkında bilgi edinin.",
+  description:
+    "2026'da inşaat mühendisi Alper Sevimli tarafından kurulan Strova İnşaat; İstanbul Bağcılar, Güneşli ve çevresinde kentsel dönüşüm, kat karşılığı ve ücret karşılığı konut projelerinde kalite, güven ve şeffaflık ilkeleriyle çalışır.",
   alternates: {
     canonical: "https://www.strovainsaat.com/hakkimizda",
   },
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function HakkimizdaPage() {
   return (
-    <main className="min-h-screen bg-black text-[#f0f0f0] pt-[100px] pb-16">
+    <div className="min-h-screen bg-black text-[#f0f0f0] pt-[100px] pb-16">
       <div className="max-w-[800px] mx-auto px-6">
         
         {/* Sayfa Başlığı */}
@@ -59,6 +60,6 @@ export default function HakkimizdaPage() {
         </div>
 
       </div>
-    </main>
+    </div>
   );
 }
