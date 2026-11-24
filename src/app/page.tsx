@@ -3,11 +3,16 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Strova İnşaat",
+  description:
+    "Strova İnşaat; İstanbul Bağcılar ve Güneşli başta olmak üzere kentsel dönüşüm, kat karşılığı ve ücret karşılığı bina yapımı ile anahtar teslim konut projeleri yürüten inşaat ve müteahhitlik firmasıdır.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function HomePage() {
   return (
-    <main className="bg-black min-h-screen flex flex-col justify-center pt-[59px]">
+    <div className="bg-black min-h-screen flex flex-col justify-center pt-[59px]">
       {/* Hero Section */}
       <section className="relative w-full max-w-[1200px] mx-auto px-6 py-[120px] md:py-[180px] flex flex-col justify-center">
         {/* Küçük Üst Başlık / Rozet */}
@@ -48,6 +53,6 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
-    </main>
+    </div>
   );
 }
