@@ -51,7 +51,7 @@ export default function HizmetlerPage() {
             <br />
             <span className="text-[#a1a4a5]">Yapı Çözümleri</span>
           </h1>
-          <p className="text-[#a1a4a5] text-[18px] leading-[1.6] max-w-[550px]">
+          <p className="text-[#a1a4a5] text-[18px] leading-[1.6] max-w-[550px] font-light">
             Kalite, güven ve sürdürülebilirlik ilkeleriyle kentsel dönüşüm, kat karşılığı ve ücret karşılığı yapım ile mevcut yapılardaki inşaat işlerinde kurumsal çözümler sunuyoruz.
           </p>
         </div>
