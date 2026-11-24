@@ -17,6 +17,7 @@ const projects = [
     category: "Kentsel Dönüşüm",
     status: "Başlıyor / Yakında",
     location: "48. Sokak No:48",
+    href: "/projeler/gunesli-baglar",
     description:
       "Strova İnşaat güvencesiyle hayata geçirilecek projemize ait tüm detaylar çok yakında burada paylaşılacaktır.",
     tags: ["Kentsel Dönüşüm", "Modern Yapı", "Güvenilir Çözümler"],
@@ -75,9 +76,12 @@ export default function ProjelerPage() {
                   </p>
                   <div className="flex items-center justify-between">
                     <span className="text-[#6c6c6c] text-[13px]">📍 {project.location}</span>
-                    <span className="text-[#a1a4a5] text-[13px] group-hover:text-[#f0f0f0] transition-colors">
+                    <Link
+                      href={project.href}
+                      className="text-[#a1a4a5] text-[13px] group-hover:text-[#f0f0f0] hover:text-white transition-colors"
+                    >
                       Detaylar →
-                    </span>
+                    </Link>
                   </div>
                 </div>
               </div>
