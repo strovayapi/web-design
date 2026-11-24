@@ -62,11 +62,10 @@ export default function IletisimPage() {
                 <input type="tel" name="telefon" placeholder="Telefon" className="w-full bg-[#0b0e14] border border-[#292d30] rounded-[6px] px-4 py-2.5 text-[14px] text-[#f0f0f0] focus:outline-none" />
                 <select name="hizmet" className="w-full bg-[#0b0e14] border border-[#292d30] rounded-[6px] px-4 py-2.5 text-[14px] text-[#f0f0f0] focus:outline-none">
                   <option value="Secilmedi">Hizmet Türü Seçiniz</option>
-                  <option value="Kentsel Donusum">Kentsel Dönüşüm</option>
-                  <option value="Kat Karsiligi">Kat Karşılığı İnşaat</option>
-                  <option value="Ucret Karsiligi">Ücret Karşılığı İnşaat</option>
-                  <option value="Konut Geliştirme">Konut Geliştirme & Satış</option>
-                  <option value="Yatirim Danismanligi">Yatırım Danışmanlığı</option>
+                  <option value="Kentsel Donusum - Kat Karsiligi">Kentsel Dönüşüm – Kat Karşılığı</option>
+                  <option value="Kentsel Donusum - Ucret Karsiligi">Kentsel Dönüşüm – Ücret Karşılığı</option>
+                  <option value="Mevcut Yapilarda Insaat Isleri">Mevcut Yapılarda İnşaat İşleri (İç ve Dış Cephe)</option>
+                  <option value="Diger">Diğer</option>
                 </select>
                 <textarea name="mesaj" required rows={4} placeholder="Mesajınız..." className="w-full bg-[#0b0e14] border border-[#292d30] rounded-[6px] px-4 py-2.5 text-[14px] text-[#f0f0f0] focus:outline-none resize-none"></textarea>
                 
