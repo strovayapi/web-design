@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter, DM_Serif_Display } from "next/font/google";
-import Script from "next/script"; // Script bileşenini import ettik
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -19,12 +18,13 @@ const dmSerifDisplay = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.strovainsaat.com"),
   title: {
     default: "Strova İnşaat",
     template: "%s | Strova İnşaat",
   },
   description:
-    "Strova İnşaat; modern konut geliştirme, güvenilir kentsel dönüşüm, bina yapım ve gayrimenkul yatırım danışmanlığı alanlarında kurumsal çözümler sunar.",
+    "Strova İnşaat; İstanbul Bağcılar ve Güneşli başta olmak üzere kentsel dönüşüm, kat karşılığı ve ücret karşılığı bina yapımı, anahtar teslim konut projeleri ve gayrimenkul yatırım danışmanlığı alanlarında hizmet veren inşaat ve müteahhitlik firmasıdır.",
   icons: {
     icon: [{ url: "/strova32x32.svg", type: "image/svg+xml" }],
     shortcut: "/strova32x32.svg",
@@ -34,11 +34,17 @@ export const metadata: Metadata = {
     "inşaat", "kentsel dönüşüm", "yapı", "bina", "yapım", "yıkım",
     "konut geliştirme", "konut projesi", "yatırım danışmanlığı", 
     "strova", "strova inşaat", "strova insaat", "strova yapi", 
-    "strova yapı", "strovainsaat", "strova yapı inşaat"
+    "strova yapı", "strovainsaat", "strova yapı inşaat",
+    "kat karşılığı", "kat karşılığı inşaat", "kat karşılığı müteahhit",
+    "ücret karşılığı inşaat", "anahtar teslim inşaat", "müteahhit", "istanbul müteahhit",
+    "bağcılar inşaat", "bağcılar müteahhit", "bağcılar kentsel dönüşüm",
+    "güneşli inşaat", "güneşli müteahhit", "güneşli kentsel dönüşüm"
   ],
   openGraph: {
     title: "Strova İnşaat",
     description: "Konut Geliştirme, Kentsel Dönüşüm & Yapı Çözümleri",
+    url: "https://www.strovainsaat.com",
+    siteName: "Strova İnşaat",
     locale: "tr_TR",
     type: "website",
     images: [
@@ -71,15 +77,12 @@ export default function RootLayout({
       lang="tr"
       className={`${inter.variable} ${dmSerifDisplay.variable} h-full antialiased`}
     >
-      <head>
-        {/* Next.js'in resmi önerdiği Script yöntemi */}
-        <Script
-          id="schema-org"
+      <body className="min-h-full flex flex-col bg-black text-[#f0f0f0]">
+        {/* Yapılandırılmış veri: sunucuda HTML'e yazılır, Google doğrudan okur */}
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-      </head>
-      <body className="min-h-full flex flex-col bg-black text-[#f0f0f0]">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
