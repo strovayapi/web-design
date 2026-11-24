@@ -4,7 +4,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Hizmetler",
   description:
-    "Strova İnşaat modern kentsel dönüşüm, konut geliştirme ve güvenli bina yapım işleri alanlarında kurumsal çözümler sunmaktadır.",
+    "Kentsel dönüşüm, kat karşılığı ve ücret karşılığı inşaat, konut geliştirme ve anahtar teslim bina yapımı. Strova İnşaat; Bağcılar, Güneşli ve İstanbul genelinde hizmet verir.",
+  alternates: {
+    canonical: "/hizmetler",
+  },
 };
 
 const services = [
@@ -17,13 +20,20 @@ const services = [
   },
   {
     number: "02",
+    title: "Kat Karşılığı & Ücret Karşılığı İnşaat",
+    description:
+      "Arsa ve eski bina sahipleriyle iki farklı modelle çalışıyoruz. Kat karşılığı modelde yapının maliyetini üstleniyor, karşılığında sözleşmede belirlenen bağımsız bölümleri alıyoruz. Ücret karşılığı modelde ise yapımı, sözleşmede belirlenen bedel karşılığında mal sahibi adına gerçekleştiriyoruz. Her iki modelde de süreci inşaat mühendisi gözetiminde, şeffaf bir sözleşmeyle yürütüyoruz.",
+    items: ["Kat Karşılığı Sözleşme", "Ücret Karşılığı Yapım", "Projelendirme & Ruhsat", "Anahtar Teslim"],
+  },
+  {
+    number: "03",
     title: "Konut Geliştirme & Projeler",
     description:
       "Modern mimari anlayışı, kaliteli işçilik ve güvenilir yapı felsefesiyle yaşam kalitesini artıran konut projeleri üretiyoruz. Estetik ve fonksiyonelliği harmanlayarak geleceğin ihtiyaçlarına cevap veren yaşam alanları tasarlıyoruz.",
     items: ["Lüks Konut Projeleri", "Villa & Müstakil Evler", "Modern Rezidanslar", "Konut Satış & Pazarlama"],
   },
   {
-    number: "03",
+    number: "04",
     title: "Yapım & İnşaat İşleri",
     description:
       "Çağdaş mühendislik teknikleri ve birinci sınıf malzeme seçimiyle, projelendirilen konutların anahtar teslim yapım süreçlerini üstleniyoruz. Söz verdiğimiz takvime sadık kalarak güvenli yapılar inşa ediyoruz.",
