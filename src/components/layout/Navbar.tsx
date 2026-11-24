@@ -3,6 +3,10 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import StrovaWordmark from "./StrovaWordmark";
+
+// true: logodaki STROVA yazısı kullanılır. false: eski düz yazı ("STROVA") geri gelir.
+const USE_LOGO_WORDMARK = true;
 
 const navLinks = [
   { href: "/hizmetler", label: "Hizmetler" },
@@ -18,10 +22,14 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 h-[59px] bg-black/80 backdrop-blur-[25px] border-b border-[#292d30]">
       <div className="max-w-[1200px] mx-auto px-6 h-full flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2">
-          <span className="text-white font-semibold text-[16px] tracking-[0.15em] uppercase">
-            STROVA
-          </span>
+        <Link href="/" className="flex items-center gap-2" aria-label="Strova İnşaat ana sayfa">
+          {USE_LOGO_WORDMARK ? (
+            <StrovaWordmark className="h-[15px] w-auto text-white" />
+          ) : (
+            <span className="text-white font-semibold text-[16px] tracking-[0.15em] uppercase">
+              STROVA
+            </span>
+          )}
           <span className="text-[#a1a4a5] text-[11px] tracking-[0.2em] uppercase border-l border-[#292d30] pl-2">
             İnşaat
           </span>
