@@ -104,6 +104,7 @@ export default function RootLayout({
     "sameAs": [
       "https://www.instagram.com/strovainsaat",
       "https://www.facebook.com/strovainsaat",
+      "https://www.linkedin.com/company/135265238",
       "https://x.com/strovainsaat",
       "https://www.tiktok.com/@strovainsaat",
     ],
